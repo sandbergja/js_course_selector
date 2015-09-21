@@ -5,24 +5,34 @@
 </head>
 <body class="col-sm-offset-3 col-sm-6">
 
+<h1>Course selector tool</h1>
+
 <form>
 <label for="math-score">Math score</label>
 <select id="math-score" class="form-control">
+  <option>Please select your score</option>
   <option>Junior wizard</option>
   <option>Senior wizard</option>
 </select>
+<br />
 <label for="reading-score">Reading score</label>
 <select id="reading-score" class="form-control">
+  <option>Please select your score</option>
   <option>Junior wizard</option>
   <option>Senior wizard</option>
 </select>
+<br />
 <label for="writing-score">Writing score</label>
 <select id="writing-score" class="form-control">
+  <option>Please select your score</option>
   <option>Junior wizard</option>
   <option>Senior wizard</option>
 </select>
 </form>
-<button class="btn btn-default" onclick="generateClasses()">What should I take?</button>
+
+<br /><br /><br />
+
+<button class="btn btn-success col-sm-6" onclick="generateClasses()">What should I take?</button>
 
 <br /><br /><br />
 
@@ -32,17 +42,14 @@
 <tr><th>Course number</th><th>Course title</th><th>Credit hours</th></tr>
 </table>
 </div>
-
 <script>
 function generateClasses() {
     var x = document.getElementById("math-score");
     var classes = document.getElementById("suggested-classes");
-
     var num_rows = classes.rows.length;
     while (1 < num_rows) {
 	   classes.deleteRow(1);
 	}
-
     var math_class = classes.insertRow(1);
     var math_number = math_class.insertCell(0);
     var math_title = math_class.insertCell(1);
@@ -50,7 +57,6 @@ function generateClasses() {
     math_number.innerHTML = "Arth95";
     math_title.innerHTML = "Arithmancy";
     math_hours.innerHTML = "3";
-
     var reading_class = classes.insertRow(2);
     var reading_number = reading_class.insertCell(0);
     var reading_title = reading_class.insertCell(1);
@@ -58,7 +64,6 @@ function generateClasses() {
     reading_number.innerHTML = "Div105";
     reading_title.innerHTML = "Divination";
     reading_hours.innerHTML = "3";
-
     var writing_class = classes.insertRow(3);
     var writing_number = writing_class.insertCell(0);
     var writing_title = writing_class.insertCell(1);
@@ -66,7 +71,6 @@ function generateClasses() {
     writing_number.innerHTML = "Cmc102";
     writing_title.innerHTML = "Care of Magical Creatures";
     writing_hours.innerHTML = "6";
-
 }
 </script>
 
