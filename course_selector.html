@@ -57,58 +57,18 @@
 
 <br /><br /><br />
 
-<div class="panel panel-default col-xs-10 col-md-5">
-<!-- <span class="panel-title">For science majors</span> -->
-<table id="suggested-classes" class="table">
+<div id="suggested-classes" style="display:none;" class="panel panel-default col-xs-10 col-md-5">
+<table class="table">
 <tr><th>Course number</th><th>Course title</th><th>Credit hours</th></tr>
 </table>
 </div>
 
 
-<div class="panel panel-default col-xs-10 col-md-5">
-<span class="panel-title">For psychology majors</span>
-<table id="suggested-classes" class="table">
-<tr><th>Course number</th><th>Course title</th><th>Credit hours</th></tr>
-</table>
-</div>
-
-<div class="panel panel-default col-xs-10 col-md-5">
-<span class="panel-title">For welding certificate seekers</span>
-<table id="suggested-classes" class="table">
-<tr><th>Course number</th><th>Course title</th><th>Credit hours</th></tr>
-</table>
-</div>
 
 
 <script>
 function generateClasses() {
-    var x = document.getElementById("math-score");
-    var classes = document.getElementById("suggested-classes");
-    var num_rows = classes.rows.length;
-    while (1 < num_rows) {
-	   classes.deleteRow(1);
-	}
-    var math_class = classes.insertRow(1);
-    var math_number = math_class.insertCell(0);
-    var math_title = math_class.insertCell(1);
-    var math_hours = math_class.insertCell(2);
-    math_number.innerHTML = "Arth95";
-    math_title.innerHTML = "Arithmancy";
-    math_hours.innerHTML = "3";
-    var reading_class = classes.insertRow(2);
-    var reading_number = reading_class.insertCell(0);
-    var reading_title = reading_class.insertCell(1);
-    var reading_hours = reading_class.insertCell(2);
-    reading_number.innerHTML = "Div105";
-    reading_title.innerHTML = "Divination";
-    reading_hours.innerHTML = "3";
-    var writing_class = classes.insertRow(3);
-    var writing_number = writing_class.insertCell(0);
-    var writing_title = writing_class.insertCell(1);
-    var writing_hours = writing_class.insertCell(2);
-    writing_number.innerHTML = "Cmc102";
-    writing_title.innerHTML = "Care of Magical Creatures";
-    writing_hours.innerHTML = "6";
+    var classes = document.getElementById("suggested-classes").style.display = 'block';
 }
 </script>
 
