@@ -2,32 +2,53 @@
 <html>
 <head>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+<script type="text/javascript" src="drag_drop.js"></script>
 </head>
 <body class="col-sm-offset-3 col-sm-6">
 
 <h1>Course selector tool</h1>
 
 <form>
-<label for="math-score">Math score</label>
-<select id="math-score" class="form-control">
-  <option>Please select your score</option>
-  <option>Junior wizard</option>
-  <option>Senior wizard</option>
-</select>
-<br />
 <label for="reading-score">Reading score</label>
 <select id="reading-score" class="form-control">
   <option>Please select your score</option>
-  <option>Junior wizard</option>
-  <option>Senior wizard</option>
+  <option>0 - 54</option>
+  <option>55 - 83</option>
+  <option>84 - 98</option>
+  <option>99 - 120</option>
 </select>
 <br />
 <label for="writing-score">Writing score</label>
 <select id="writing-score" class="form-control">
   <option>Please select your score</option>
-  <option>Junior wizard</option>
-  <option>Senior wizard</option>
+  <option>0 - 30</option>
+  <option>31 - 68</option>
+  <option>69 - 79</option>
+  <option>80 - 94</option>
+  <option>95 - 120</option>
 </select>
+<br />
+<label for="math-score-1">Math scores</label>
+<select id="math-score-1" class="form-control" style="col-sm-2">
+  <option>Arithmetic score</option>
+  <option>20 - 74</option>
+  <option>75 - 120</option>
+</select>
+<select id="math-score-2" class="form-control" style="col-sm-2">
+  <option>Algebra score</option>
+  <option>21 - 38</option>
+  <option>39 - 67</option>
+  <option>68 - 76</option>
+  <option>77 - 120</option>
+</select>
+<select id="math-score-3" class="form-control" style="col-sm-2">
+  <option>College math score</option>
+  <option>20 - 35</option>
+  <option>36 - 58</option>
+  <option>59 - 79</option>
+  <option>80 - 120</option>
+</select>
+<br />
 </form>
 
 <br /><br /><br />
