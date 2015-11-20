@@ -87,18 +87,19 @@
 <button class="btn btn-success col-sm-6" onclick="generateClasses()">What should I take?</button>
 
 <br /><br /><br />
-
-<div id="suggested-classes" style="display:none;" class="panel panel-default col-xs-10 col-md-6">
+<div id="all-classes">
+<div id="suggested-classes" style="display:none;" class="panel panel-default col-xs-10">
 <table class="table">
 <tr><th>Course number</th><th>Course title</th><th>Credit hours</th></tr>
 </table>
 <h2>Other options</h2>
-<div id="suggested-classes" style="display:none;" class="panel panel-default col-xs-10 col-md-3">
+<div id="welding" class="panel panel-default col-xs-10 col-md-3">
 <span class="panel-heading">Welding majours:</span>
 <table class="table">
 <tr><th>Course number</th><th>Course title</th><th>Credit hours</th></tr>
 </table>
-<span class="">Culinary arts majours:</span>
+<div id="culinary" class="panel panel-default col-xs-10 col-md-3">
+<span class="panel-heading">Culinary arts majours:</span>
 <table class="table">
 <tr><th>Course number</th><th>Course title</th><th>Credit hours</th></tr>
 </table>
@@ -107,12 +108,12 @@
 
 </div>
 
-
+</div>
 
 
 <script>
 function generateClasses() {
-    var classes = document.getElementById("suggested-classes").style.display = 'block';
+    var classes = document.getElementById("all-classes").style.display = 'block';
 }
 </script>
 
